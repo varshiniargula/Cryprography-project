@@ -1,0 +1,2 @@
+# A HYBRID CRYPTOGRAPHY SYSTEM BASED ON THE VIGENERE CIPHER AND POLYBIUS SQUARE CIPHER
+### The project focuses on developing a comprehensive user interface that simplifies the encryption and decryption process, making it accessible to users with varying levels of technical expertise. Our goal is to provide a reliable and versatile solution that can be utilized in a wide range of applications where data security is paramount.
