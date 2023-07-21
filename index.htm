@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hybrid Cryptography System</title>
+</head>
+<body>
+    <h1>Varshini's Hybrid Cryptography System</h1>
+    <h2>Encryption</h2>
+    <form action="/" method="POST">
+        <label for="plaintext">Plain Text:</label>
+        <input type="text" id="plaintext" name="plaintext" required>
+        <br>
+        <label for="key">Key:</label>
+        <input type="text" id="key" name="key" required>
+        <br>
+        <input type="submit" value="Encrypt">
+    </form>
+
+    <h2>Decryption</h2>
+    <form action="/decrypt" method="POST">
+        <label for="ciphertext">Cipher Text:</label>
+        <input type="text" id="ciphertext" name="ciphertext" required>
+        <br>
+        <label for="key">Key:</label>
+        <input type="text" id="key" name="key" required>
+        <br>
+        <input type="submit" value="Decrypt">
+    </form>
+
+    {% if ciphertext %}
+        <h2>Result:</h2>
+        <p>Cipher Text: {{ ciphertext }}</p>
+    {% endif %}
+
+    {% if plaintext %}
+        <h2>Result:</h2>
+        <p>Plain Text: {{ plaintext }}</p>
+    {% endif %}
+</body>
+</html>
